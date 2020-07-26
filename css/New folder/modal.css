@@ -1,0 +1,109 @@
+
+[id^=modal] {
+    border: 4px solid #3b5441;
+    box-shadow: 8px 8px 13px #3b5441;
+    border-radius: 1%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(calc(-50.0607%));
+    height: 90%;
+    width: 90%;
+    overflow-x: hidden;
+    background: white;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s ease-in;
+    }
+
+  input[type=checkbox] {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    }
+
+  #modal1:target {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    z-index: 20;
+    }
+
+  #modal2:target {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    z-index: 20;
+    }
+
+    #modal3:target {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+      z-index: 20;
+      }
+
+      #modal4:target {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        z-index: 20;
+      }
+
+        #modal5:target {
+          display: block;
+          opacity: 1;
+          visibility: visible;
+          z-index: 20;
+          }
+
+          #modal6:target {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            z-index: 20;
+            }
+
+            #modal7:target {
+              display: block;
+              opacity: 1;
+              visibility: visible;
+              z-index: 20;
+              }
+
+  .modalclose {
+    text-align: right;
+    padding-bottom: 0px;
+    padding-right: 1vw;
+    padding-top: 5px;
+    color: #3b5441;
+    transition: color 0.5s ease;
+  }
+
+  .modalclose:hover {
+    color: #83e85a;
+    text-decoration: none;
+  }
+
+.linkmod {
+  display: block;
+  text-decoration: none;
+  color: #3b5441;
+  transition: color 0.5s ease;
+}
+
+.linkmod:hover {
+  display: block;
+  color: #83e85a;
+  text-decoration: none;
+}
+
+.sublinkmod{
+  justify-content: center;
+}
+
+.subtitleinmod {
+  display: block;
+  padding-bottom: 2vh;
+  font-family: 'nunito-sans', sans-serif;
+}   

@@ -1,0 +1,567 @@
+html {
+  background-color: black;
+}
+
+body {
+  margin: 0px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 2fr 1fr 1fr 1fr 1fr 1fr 2fr;
+      grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 2fr;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  height: 100vh;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  background-color: pink;
+  border: solid;
+  border-color: white;
+  border-width: 4px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.title {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1/8;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #093145;
+  margin-bottom: 4px;
+}
+
+#logo {
+  -webkit-animation: fill 0.5s ease forwards 5s;
+          animation: fill 0.5s ease forwards 5s;
+}
+
+#logo path:nth-child(2) {
+  stroke-dasharray: 223;
+  stroke-dashoffset: 223;
+  -webkit-animation: line-anim 2s ease forwards 0.3s;
+          animation: line-anim 2s ease forwards 0.3s;
+}
+
+#logo path:nth-child(3) {
+  stroke-dasharray: 384;
+  stroke-dashoffset: 384;
+  -webkit-animation: line-anim 2s ease forwards 0.6s;
+          animation: line-anim 2s ease forwards 0.6s;
+}
+
+#logo path:nth-child(4) {
+  stroke-dasharray: 262;
+  stroke-dashoffset: 262;
+  -webkit-animation: line-anim 2s ease forwards 0.9s;
+          animation: line-anim 2s ease forwards 0.9s;
+}
+
+#logo path:nth-child(5) {
+  stroke-dasharray: 292;
+  stroke-dashoffset: 292;
+  -webkit-animation: line-anim 2s ease forwards 1.2s;
+          animation: line-anim 2s ease forwards 1.2s;
+}
+
+#logo path:nth-child(6) {
+  stroke-dasharray: 156;
+  stroke-dashoffset: 156;
+  -webkit-animation: line-anim 2s ease forwards 1.5s;
+          animation: line-anim 2s ease forwards 1.5s;
+}
+
+#logo path:nth-child(7) {
+  stroke-dasharray: 270;
+  stroke-dashoffset: 270;
+  -webkit-animation: line-anim 2s ease forwards 1.8s;
+          animation: line-anim 2s ease forwards 1.8s;
+}
+
+#logo path:nth-child(8) {
+  stroke-dasharray: 384;
+  stroke-dashoffset: 384;
+  -webkit-animation: line-anim 2s ease forwards 2.1s;
+          animation: line-anim 2s ease forwards 2.1s;
+}
+
+#logo path:nth-child(9) {
+  stroke-dasharray: 262;
+  stroke-dashoffset: 262;
+  -webkit-animation: line-anim 2s ease forwards 2.4s;
+          animation: line-anim 2s ease forwards 2.4s;
+}
+
+#logo path:nth-child(10) {
+  stroke-dasharray: 151;
+  stroke-dashoffset: 151;
+  -webkit-animation: line-anim 2s ease forwards 2.7s;
+          animation: line-anim 2s ease forwards 2.7s;
+}
+
+#logo path:nth-child(11) {
+  stroke-dasharray: 256;
+  stroke-dashoffset: 256;
+  -webkit-animation: line-anim 2s ease forwards 3.0s;
+          animation: line-anim 2s ease forwards 3.0s;
+}
+
+@-webkit-keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+
+[class^="question"] {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1/8;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background-color: #093145;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.start {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1/8;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 5;
+  grid-row: 2/7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #093145;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.start:hover {
+  cursor: pointer;
+}
+
+.finalScore {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1/8;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 5;
+  grid-row: 2/7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #093145;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+[class^="correctAnswer"] {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1/8;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 5;
+  grid-row: 2/7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: lime;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+[class^="incorrectAnswer"] {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1/8;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 5;
+  grid-row: 2/7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: red;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+[class^="answer"] {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-column: 2/7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.opt1 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#A2B86C), color-stop(#A2B86C), to(black));
+  background-image: linear-gradient(to right, #A2B86C, #A2B86C, black);
+  margin: 5px;
+  border-left: 14px solid #93a661;
+}
+
+.opt1h {
+  -webkit-box-shadow: -20px 0px 10px #A2B86C;
+          box-shadow: -20px 0px 10px #A2B86C;
+  cursor: pointer;
+}
+
+.opt2 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#EBC944), color-stop(#EBC944), to(black));
+  background-image: linear-gradient(to right, #EBC944, #EBC944, black);
+  margin: 5px;
+  border-left: 14px solid #d3b53d;
+}
+
+.opt2h {
+  -webkit-box-shadow: -20px 0px 10px #EBC944;
+          box-shadow: -20px 0px 10px #EBC944;
+  cursor: pointer;
+}
+
+.opt3 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#1496BB), color-stop(#1496BB), to(black));
+  background-image: linear-gradient(to right, #1496BB, #1496BB, black);
+  margin: 5px;
+  border-left: 14px solid #1287a8;
+}
+
+.opt3h {
+  -webkit-box-shadow: -20px 0px 10px #1496BB;
+          box-shadow: -20px 0px 10px #1496BB;
+  cursor: pointer;
+}
+
+.opt4 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#f26d21), color-stop(#f26d21), to(black));
+  background-image: linear-gradient(to right, #f26d21, #f26d21, black);
+  margin: 5px;
+  border-left: 14px solid #da621e;
+}
+
+.opt4h {
+  -webkit-box-shadow: -20px 0px 10px #f26d21;
+          box-shadow: -20px 0px 10px #f26d21;
+  cursor: pointer;
+}
+
+.centering {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.optionCentering {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.progress {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  background-color: #093145;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-right: 4px;
+}
+
+.r1 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  background-color: #093145;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4px;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+#rc {
+  background-color: lime;
+}
+
+#ri {
+  background-color: red;
+}
+
+.r2 {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  background-color: #093145;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4px;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.r3 {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  grid-column: 5/6;
+  background-color: #093145;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4px;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.r4 {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 1;
+  grid-column: 6/7;
+  background-color: #093145;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4px;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.r5 {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 1;
+  grid-column: 7/8;
+  background-color: #093145;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 4px;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+@-webkit-keyframes correctAlert {
+  20% {
+    background-color: lime;
+  }
+  40% {
+    background-color: #093145;
+  }
+  60% {
+    background-color: lime;
+  }
+  80% {
+    background-color: #093145;
+  }
+  100% {
+    background-color: lime;
+  }
+}
+
+@keyframes correctAlert {
+  20% {
+    background-color: lime;
+  }
+  40% {
+    background-color: #093145;
+  }
+  60% {
+    background-color: lime;
+  }
+  80% {
+    background-color: #093145;
+  }
+  100% {
+    background-color: lime;
+  }
+}
+
+@-webkit-keyframes incorrectAlert {
+  20% {
+    background-color: red;
+  }
+  40% {
+    background-color: #093145;
+  }
+  60% {
+    background-color: red;
+  }
+  80% {
+    background-color: #093145;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+@keyframes incorrectAlert {
+  20% {
+    background-color: red;
+  }
+  40% {
+    background-color: #093145;
+  }
+  60% {
+    background-color: red;
+  }
+  80% {
+    background-color: #093145;
+  }
+  100% {
+    background-color: red;
+  }
+}
+/*# sourceMappingURL=quizstyle.css.map */
